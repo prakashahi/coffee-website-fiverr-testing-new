@@ -1,0 +1,182 @@
+/* Import Google font - Lora */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Lora:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Lora', serif;
+}
+
+/* Some color variables */
+:root {
+  --light-yellow: #DBD1BD;
+  --coffee-color: #210700;
+  --yellow-color: #EED23E;
+  --dark-yellow: #937254;
+  --light-coffee: #625753;
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--light-coffee);
+}
+
+header {
+  background: var(--coffee-color);
+}
+
+.top-banner {
+  background: var(--light-yellow);
+}
+
+header .navbar-nav {
+  padding-left: 110px!important;
+}
+
+header .nav-link {
+  color: var(--yellow-color);
+}
+
+header .nav-link:focus {
+  color: var(--yellow-color)!important;
+}
+
+header .nav-link:hover {
+  color: var(--coffee-color);
+  background: var(--dark-yellow);
+}
+
+header .main-logo {
+  max-width: 190px;
+}
+
+header .right-icon {
+  width: 33px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+header .user-icon {
+  width: 37px;
+}
+
+.homepage .carousel-text {
+  right: 30px;
+  top: 30px;
+  max-width: 400px;
+  font-size: 0.9rem;
+}
+
+.bg-text {
+  position: fixed;
+  top: 400px;
+  left: 30px;
+  color: var(--dark-yellow);
+  font-size: 15rem;
+  z-index: -1;
+  font-family: 'Inter', sans-serif;
+}
+
+.article .favourite-icon {
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+  max-width: 35px;
+}
+
+.history-top img {
+  max-width: 120px;
+}
+
+.history-top h2 {
+  font-family: 'Inter', sans-serif;
+}
+
+.history-top .tip-box {
+  background: var(--yellow-color);
+}
+
+.history .date {
+  margin-left: 50px;
+}
+
+.form-wrapper {
+  min-height: 100vh;
+}
+
+.form-wrapper .form {
+  max-width: 420px;
+  width: 100%;
+  background: var(--coffee-color);
+}
+
+.form .form-logo {
+  max-width: 250px;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+footer {
+  background: var(--coffee-color);
+}
+
+footer img {
+  width: 45px;
+}
+
+@media screen and (max-width: 580px) {
+  .homepage .carousel-text {
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    max-width: 100%;
+    font-size: 0.75rem!important;
+  }
+  .homepage .carousel-indicators {
+    margin-bottom: 0;
+  }
+
+  .long-card {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .long-card img:not(.favourite-icon) {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+
+  .history-top h2 {
+    text-align: center;
+  }
+
+  .history-top img {
+    max-width: 100px;
+  }
+
+  .history-top .tip-box {
+    width: 100%!important;
+  }
+
+  .mobile-history {
+    display: block!important;
+  }
+
+  .desktop-history {
+    display: none!important;
+  }
+
+  .mobile-history .date {
+    right: 15px;
+    top: 20px;
+  }
+  .mobile-history h4 {
+    bottom: 20px;
+    left: 20px;
+  }
+  
+}
